@@ -1,5 +1,6 @@
 import Button from "../components/Button"
 import aboutImg from "../assets/aboutImg.png"
+import { Link } from "react-router-dom"
 
 function About() {
   return (
@@ -15,7 +16,9 @@ function About() {
               <br />
               Your van is ready.
               </h4>
-              <Button className={'black button-sm'}>Explore our vans</Button>
+              <Button className={'black button-sm'}>
+                <Link to={"/vans"}>Explore our vans</Link>
+              </Button>
             </div>
         </div>
     </div>
