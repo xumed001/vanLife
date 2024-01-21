@@ -1,4 +1,4 @@
-# MPA app uing React + Vite
+# MPA app uing React Router
 
 - [Live Demo 👈](https://project-vanlife.netlify.app/)
 
