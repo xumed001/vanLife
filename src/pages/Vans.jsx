@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react"
+import Badge from "../components/Badge"
 
 function Vans() {
 
   const [vans, setVans] = useState([])
+
   useEffect(() => {
     fetch('/api/vans')
         .then(res => res.json())
@@ -19,9 +21,14 @@ function Vans() {
                     <img className="van--image" src={van.imageUrl} alt={van.description} />
                     <div className="van--info">
                         <h4 className="van--name">{van.name}</h4>
-                        <p className="van--price">{van.price}</p>
+                        <p className="van--price">
+                            ${van.price}
+                        </p>
                     </div>
-                    <i className="van--type">{van.type}</i>
+                    <span>/day</span>
+                    <i className="van--type">
+                        <Badge text={van.type} />
+                    </i>
                 </div>
             ))}
         </div>

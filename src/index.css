@@ -82,6 +82,36 @@ button:hover {
   font-weight: 700;
 }
 
+.badge {
+  margin-top: -1rem;
+  border-radius: 0.3rem;
+  color: #ffead0;
+  width: 4.8rem;
+  height: 1.8rem;
+}
+
+.badge p {
+  width: 4.8rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-style: normal;
+}
+
+.badge.simple {
+  background-color: #e17654;
+}
+.badge.rugged {
+  background-color: #115e59;
+}
+.badge.luxury {
+  background-color: #161616;
+}
+
 /* --NavBar---------------------------------------------------------------- */
 
 header {
@@ -225,6 +255,37 @@ footer {
   padding-inline: 1.4rem;
 }
 
+.vans--cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 3rem;
+}
+
 .van--image {
-  width: 10rem;
+  max-width: 100%;
+  border-radius: 0.3rem;
+}
+
+.van--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #161616;
+}
+
+.van--name,
+.van--price {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.van--card span {
+  display: block;
+  text-align: end;
+  margin-top: -1.2rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
