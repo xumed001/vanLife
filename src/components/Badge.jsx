@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 
-
 function Badge({ text }) {
 
   return (

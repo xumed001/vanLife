@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import Badge from "../components/Badge"
 
 function Vans() {
@@ -18,17 +19,19 @@ function Vans() {
         <div className="vans--cards">
             {vans.map( van => (
                 <div key={van.id} className="van--card">
-                    <img className="van--image" src={van.imageUrl} alt={van.description} />
-                    <div className="van--info">
-                        <h4 className="van--name">{van.name}</h4>
-                        <p className="van--price">
-                            ${van.price}
-                        </p>
-                    </div>
-                    <span>/day</span>
-                    <i className="van--type">
-                        <Badge text={van.type} />
-                    </i>
+                    <Link to={`/vans/${van.id}`}>
+                        <img className="van--image" src={van.imageUrl} alt={van.description} />
+                        <div className="van--info">
+                            <h4 className="van--name">{van.name}</h4>
+                            <p className="van--price">
+                                ${van.price}
+                            </p>
+                        </div>
+                        <span>/day</span>
+                        <i className="van--type">
+                            <Badge text={van.type} />
+                        </i>
+                    </Link>
                 </div>
             ))}
         </div>

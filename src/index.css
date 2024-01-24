@@ -53,8 +53,8 @@ button:hover {
 
 .button {
   border: none;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
   width: 100%;
   font-size: 1rem;
 }
@@ -288,4 +288,37 @@ footer {
   margin-top: -1.2rem;
   font-size: 0.8rem;
   font-weight: 500;
+  color: #161616;
+}
+
+/* --VanDetail-------------------------------------------------------------------------- */
+
+.vanDetail--container {
+  padding: 4rem 1.25rem;
+}
+
+.vanDetail--container img {
+  width: 100%;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.vanDetail--container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.vanDetail--price {
+  font-weight: 700;
+}
+.vanDetail--price span {
+  font-weight: 500;
+}
+
+.vanDetail--des {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 1rem;
 }
