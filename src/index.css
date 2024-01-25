@@ -35,6 +35,7 @@ body {
 
 a {
   text-decoration: none;
+  width: 100%;
 }
 
 a:visited {
@@ -43,13 +44,6 @@ a:visited {
 }
 
 /* --Components---------------------------------------------------------------- */
-button {
-  transition: transform 0.1s ease-in-out;
-}
-
-button:hover {
-  transform: translate(0, -2px);
-}
 
 .button {
   border: none;
@@ -57,6 +51,11 @@ button:hover {
   padding-bottom: 0.9rem;
   width: 100%;
   font-size: 1rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: translate(0, -2px);
 }
 
 .button-sm {
@@ -159,7 +158,7 @@ footer {
 /* --HomePage---------------------------------------------------------------- */
 
 .home {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.36), rgba(0, 0, 0, 0.36)),
     url('./assets/homeBg.png') no-repeat center 20%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
